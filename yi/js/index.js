@@ -8,7 +8,7 @@ function ajax(){
             var json = xhr.responseText;
         
             json = JSON.parse(json);
-            // console.log(json)
+            console.log(json)
              
         
             // return json;
@@ -17,7 +17,6 @@ function ajax(){
         var td1 = document.createElement('td');
         var td2 = document.createElement('td');
         var td3 = document.createElement('td');
-
 
         var inp = document.createElement('input');
             inp.type = "button";
@@ -42,8 +41,16 @@ function ajax(){
 
         $ddd.appendChild(tr)            //tr放在table中
 
+        var $tr1 = document.querySelectorAll("input");
+        var ccs;
+    //     for(var i=0;i<$tr1.length;i++){
+    //          ccs[i] = $tr1[i].parentNode.parentNode;
         
-        
+    //     $tr[i].onclick = function (){
+    //         ccs[i] = null;
+    //     }
+    // }
+
         } 
         }
     }  
