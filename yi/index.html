@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+        <table border="1px" cellspacing="0" cellpadding="0" id="ddd">
+			<tr class="btn">
+				<td>商品名称</td>
+				<td>价格</td>
+				<td>修改/删除</td>
+			</tr>
+			
+        </table>
+      
+    </div>
+</body>
+<script src="js/index.js"> </script>
+<script>
+    
+    var $ddd = document.getElementById("ddd")
+    var $btn = document.getElementsByClassName("btn");
+    var $tr = document.querySelectorAll("tr")
+    var $td = document.querySelectorAll("td")
+
+   window.onload = function (){
+        ajax()
+   }
+   
+   $td1 = document.querySelectorAll("input");
+       console.log($td1) 
+</script>
+</html>
