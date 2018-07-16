@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/css.css"/>
+	</head>
+	<body>
+		<div class="main">
+			<ul class="header">
+				<li class="li"><a href="#"><img src="img/images/12.jpg"/></a>
+				<a href=""><p>小米电视455英寸</p></a>
+				<a href=""><p>4.9mm极超薄高端旗舰电视</p></a>
+				<a href=""><span>3699元</span> <span>4499元</span></a>
+				<b>享9折</b>
+				<div class="box">
+					
+				</div>
+				</li>
+				<li class="li2"><a href="#"><img src="img/images/09.jpg"/></a>
+				<a href=""><p>小米电视455英寸</p></a>
+				<a href=""><p>4.9mm极超薄高端旗舰电视</p></a>
+				<a href=""><span>3699元</span> <span>4499元</span></a><b>享9折</b>
+				<div class="box">
+					
+				</div></li>
+				
+				<li class="li3"><a href="#"><img src="img/images/06.jpg"/></a>
+				<a href=""><p>小米电视455英寸</p></a>
+				<a href=""><p>4.9mm极超薄高端旗舰电视</p></a>
+				<a href=""><span>3699元</span> <span>4499元</span></a><b>新品</b>
+				<div class="box">
+					
+				</div></li>
+				
+				<li class="li4"><a href="#"><img src="img/images/03.jpg"/></a>
+				<a href=""><p>小米电视455英寸</p></a>
+				<a href=""><p>4.9mm极超薄高端旗舰电视</p></a>
+				<a href=""><span>3699元</span> <span>4499元</span></a>
+				<div class="box"> 
+					
+				</div></li>
+				<li class="li5"><a href="#"><img src="img/images/22.jpg"/></a>
+				<a href=""><p>小米电视455英寸</p></a>
+				<a href=""><p>4.9mm极超薄高端旗舰电视</p></a>
+				<a href=""><span>3699元</span> <span>4499元</span></a><b>享9折</b>
+				<div class="box">
+					
+				</div></li>
+				
+				<li class="li6"><a href="#"><img src="img/images/25.jpg"/></a>
+				<a href=""><p>小米电视455英寸</p></a>
+				<a href=""><p>4.9mm极超薄高端旗舰电视</p></a>
+				<a href=""><span>3699元</span> <span>4499元</span></a><b>享9.5折</b>
+				<div class="box">
+					
+				</div></li>
+				
+				<li class="li7"><a href="#"><img src="img/images/28.jpg"/></a>
+				<a href=""><p>小米电视455英寸</p></a>
+				<a href=""><p>4.9mm极超薄高端旗舰电视</p></a>
+				<a href=""><span>3699元</span> <span>4499元</span></a>
+				<b>享9折</b>
+				<div class="box">
+					
+				</div></li>
+				<li class="li8">
+					<div class="boor">
+						<a href=""><span>小白摄像机</span>
+						<span>349元</span></a>
+						<a href=""><img src="img/images/19.jpg"/></a></div>
+					<div class="baar"><a href=""><img src="img/images/35.jpg"/></a></div>
+			</li>
+			</ul>
+		</div>
+		
+		
+		
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$('.li').on('mouseenter', function() {
+            $('.li').animate({left: 1, top:-2}, 500)
+			})
+			$('.li2').on('mouseenter', function() {
+            $('.li2').animate({left: 1, top:-2}, 500)
+			})
+			$('.li').on('mouseleave', function() {
+            $('.li').animate({left: 0, top:0}, 500)
+			})
+			$('.li2').on('mouseleave', function() {
+            $('.li2').animate({left: 0, top:0}, 500)
+			})
+			$('.li3').on('mouseenter', function() {
+            $('.li3').animate({left: 1, top:-2}, 500)
+			})
+			$('.li3').on('mouseleave', function() {
+            $('.li3').animate({left: 0, top:0}, 500)
+			})
+			$('.li4').on('mouseenter', function() {
+            $('.li4').animate({left: 1, top:-2}, 500)
+			})
+			$('.li4').on('mouseleave', function() {
+            $('.li4').animate({left: 0, top:0}, 500)
+			})
+			$('.li5').on('mouseenter', function() {
+            $('.li5').animate({left: 1, top:-2}, 500)
+			})
+			$('.li5').on('mouseleave', function() {
+            $('.li5').animate({left: 0, top:0}, 500)
+			})
+			$('.li6').on('mouseenter', function() {
+            $('.li6').animate({left: 1, top:-2}, 500)
+			})
+			$('.li6').on('mouseleave', function() {
+            $('.li6').animate({left: 0, top:0}, 500)
+			})
+			$('.li7').on('mouseenter', function() {
+            $('.li7').animate({left: 1, top:-2}, 500)
+			})
+			$('.li7').on('mouseleave', function() {
+            $('.li7').animate({left: 0, top:0}, 500)
+			})
+			var menu = (function() {
+				var $ulBox = $('.header');
+				return {
+					init(){
+						this.events();
+					},
+					events(){
+						var _this = this;
+						$ulBox.children('li').on('mouseover',function() {
+							index = $(this).index()
+							$ulBox.children('li').eq(index).css('top','10')
+							$ulBox.children('li').eq(index).children('div').stop().slideDown()
+						}).on('mouseleave',function() {
+							$ulBox.children('li').children('div').stop().slideUp()
+						})
+					}
+				}
+			})()
+			menu.init()
+		</script>
+	</body>
+</html>
